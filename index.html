@@ -17,23 +17,24 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: flex-end; /* Move content to the bottom */
       align-items: center;
-      justify-content: center;
       text-align: center;
+      padding-bottom: 40px; /* Space above the links */
     }
     .links a {
       display: block;
-      margin: 15px;
+      margin: 10px;
       font-size: 24px;
-      color: white;
+      color: #00ffff; /* Neon Aqua color */
       text-decoration: none;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 12px 20px;
-      border-radius: 10px;
-      transition: background 0.3s ease;
+      font-weight: bold;
+      text-shadow: 0 0 8px #00ffff, 0 0 20px #00ffff;
+      transition: color 0.3s;
     }
     .links a:hover {
-      background: rgba(255, 255, 255, 0.3);
+      color: #ff00ff; /* Neon Pink on hover */
+      text-shadow: 0 0 8px #ff00ff, 0 0 20px #ff00ff;
     }
   </style>
 
