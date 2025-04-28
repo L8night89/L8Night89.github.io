@@ -1,44 +1,48 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+  <title>L8Night89</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
       background-image: url('27CF6FB2-47D9-4A14-B085-98231E49BB27.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      min-height: 100vh;
-    }
-
-    header {
-      background: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      padding: 1rem;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      border-radius: 8px;
-      margin: 20px;
     }
-
-    nav a {
-      color: #fff;
-      margin: 0 0.5rem;
+    .links a {
+      display: block;
+      margin: 15px;
+      font-size: 24px;
+      color: white;
       text-decoration: none;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 12px 20px;
+      border-radius: 10px;
+      transition: background 0.3s ease;
     }
-  <div class="links">
+    .links a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
 
-</body>
-<div class="links">
-  <a href="https://open.spotify.com/artist/5g9AqILC8MJFUWWgwd4KXt?si=VGY4BZHRRCmYaIRDZZeTuQ" target="_blank">Spotify</a>
-  <a href="https://instagram.com/l8_night89" target="_blank">Instagram</a>
-  <a href="https://tiktok.com/@l8.night89" target="_blank">TikTok</a>
-</div>
+</head>
+<body>
+  <div class="links">
+    <a href="https://open.spotify.com/artist/5g9AqILC8MJFUWWgwd4KXt?si=VGY4BZHRRCmYaIRDZZeTuQ" target="_blank">Listen on Spotify</a>
+    <a href="https://instagram.com/l8_night89" target="_blank">Follow on Instagram</a>
+    <a href="https://tiktok.com/@l8.night89" target="_blank">Follow on TikTok</a>
+  </div>
 </body>
 </html>
