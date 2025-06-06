@@ -1,49 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>L8Night89</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L8 Night89 – Gleaming The Night</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('27CF6FB2-47D9-4A14-B085-98231E49BB27.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end; /* Move content to the bottom */
-      align-items: center;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
       text-align: center;
-      padding-bottom: 40px; /* Space above the links */
+      padding: 40px 20px;
+      background-size: cover;
     }
-    .links a {
-      display: block;
+
+    h1 {
+      font-size: 3em;
+      color: #ff0080;
+      text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
       margin: 10px;
-      font-size: 24px;
-      color: #00ffff; /* Neon Aqua color */
+      padding: 15px 25px;
+      font-size: 1em;
       text-decoration: none;
-      font-weight: bold;
-      text-shadow: 0 0 8px #00ffff, 0 0 20px #00ffff;
-      transition: color 0.3s;
+      border-radius: 5px;
+      background: linear-gradient(135deg, #ff0080, #7928ca);
+      color: white;
+      box-shadow: 0 0 10px #ff0080;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .links a:hover {
-      color: #ff00ff; /* Neon Pink on hover */
-      text-shadow: 0 0 8px #ff00ff, 0 0 20px #ff00ff;
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff66b2;
+    }
+
+    iframe {
+      margin-top: 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 400px;
+      height: 152px;
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2em;
+      }
+
+      .button {
+        width: 100%;
+        max-width: 300px;
+      }
     }
   </style>
-
 </head>
 <body>
-  <div class="links">
-    <a href="https://open.spotify.com/artist/5g9AqILC8MJFUWWgwd4KXt?si=VGY4BZHRRCmYaIRDZZeTuQ" target="_blank">Listen on Spotify</a>
-    <a href="https://instagram.com/l8_night89" target="_blank">Follow on Instagram</a>
-    <a href="https://tiktok.com/@l8.night89" target="_blank">Follow on TikTok</a>
-  </div>
+  <h1>L8 Night89</h1>
+  <p>Retro Dreams. Future Sound.<br>Gleaming The Night – out now 🎶</p>
+
+  <a class="button" href="https://open.spotify.com/artist/5g9AqILC8MJFUWWgwd4KXt?si=LA2Yj5OrTiKm5abIE2VpmQ" target="_blank">🎧 Listen on Spotify</a>
+  <a class="button" href="#" target="_blank">🍎 Apple Music (coming soon)</a>
+  <a class="button" href="https://m.youtube.com/channel/UCMLWUqN7BfxSN3es3ZmDcbw" target="_blank">▶️ YouTube Music</a>
+  <a class="button" href="https://www.instagram.com/l8_night89" target="_blank">📷 Instagram</a>
+  <a class="button" href="https://www.tiktok.com/@l8.night89" target="_blank">🎵 TikTok</a>
+
+  <iframe style="margin-top: 40px" 
+    src="https://open.spotify.com/embed/track/6iL2j2XmoeDvasQ7CPGrc3?utm_source=generator" 
+    allow="encrypted-media">
+  </iframe>
 </body>
 </html>
