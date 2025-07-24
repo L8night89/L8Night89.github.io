@@ -1,118 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '545482999165320');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=545482999165320&ev=PageView&noscript=1" />
-  </noscript>
-  <!-- End Meta Pixel Code -->
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>L8 Night89 – Gleaming The Night</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L8 Night89 - Official Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-      color: #ffffff;
-      text-align: center;
-      padding: 40px 20px;
-      background-size: cover;
-    }
-
-    .logo {
-      max-width: 400px;
-      width: 100%;
-      height: auto;
-      margin: 0 auto 30px;
-      display: block;
-    }
-
-    h1 {
-      font-size: 3em;
-      color: #ff0080;
-      text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
-    }
-
-    p {
-      font-size: 1.2em;
-      color: #ddd;
-      margin-bottom: 30px;
-    }
-
-    .button {
-      display: inline-block;
-      margin: 10px;
-      padding: 15px 25px;
-      font-size: 1em;
-      text-decoration: none;
-      border-radius: 5px;
-      background: linear-gradient(135deg, #ff0080, #7928ca);
+      font-family: 'Roboto', sans-serif;
+      background: #000;
       color: white;
-      box-shadow: 0 0 10px #ff0080;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
-    .button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px #ff66b2;
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat, #000;
     }
-
-    iframe {
+    header img {
+      max-width: 90%;
+      height: auto;
+      width: 400px;
+      filter: drop-shadow(0 0 12px cyan);
+    }
+    .cta-button {
+      display: inline-block;
       margin-top: 30px;
-      border-radius: 12px;
-      width: 100%;
-      max-width: 400px;
-      height: 152px;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: cyan;
       border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: 'Orbitron', sans-serif;
+      box-shadow: 0 0 10px cyan;
+      transition: 0.3s;
     }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.2em;
-      }
-
-      .button {
-        width: 100%;
-        max-width: 300px;
-      }
+    .cta-button:hover {
+      background-color: white;
+      color: black;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 0;
+      background-color: #0d0d0d;
+    }
+    .social-links a {
+      color: cyan;
+      font-family: 'Orbitron', sans-serif;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .social-links a:hover {
+      color: white;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo image -->
-  <img src="assets/images/logo.png" alt="L8 Night89 Logo" class="logo" />
+  <header>
+    <div>
+      <img src="Asset 1@4x.png" alt="L8 Night89 Logo">
+      <br>
+      <a class="cta-button" href="https://open.spotify.com/artist/5g9AqILC8MJFUWWgwd4KXt?si=2aaCQkLATqiBalvReBNusg" target="_blank">Listen Now</a>
+    </div>
+  </header>
 
-  <h1>L8 Night89</h1>
-  <p>Retro Dreams. Future Sound.<br>Gleaming The Night – out now 🎶</p>
-
-  <a class="button" href="https://open.spotify.com/artist/5g9AqILC8MJFUWWgwd4KXt?si=LA2Yj5OrTiKm5abIE2VpmQ" target="_blank">🎧 Listen on Spotify</a>
-  <a class="button" href="#" target="_blank">🍎 Apple Music (coming soon)</a>
-  <a class="button" href="https://m.youtube.com/channel/UCMLWUqN7BfxSN3es3ZmDcbw" target="_blank">▶️ YouTube Music</a>
-  <a class="button" href="https://www.instagram.com/l8_night89" target="_blank">📷 Instagram</a>
-  <a class="button" href="https://www.tiktok.com/@l8.night89" target="_blank">🎵 TikTok</a>
-
-  <iframe style="margin-top: 40px" 
-    src="https://open.spotify.com/embed/track/6iL2j2XmoeDvasQ7CPGrc3?utm_source=generator" 
-    allow="encrypted-media">
-  </iframe>
+  <div class="social-links">
+    <a href="https://l8night89.com/#" target="_blank">Website</a>
+    <a href="https://www.instagram.com/l8_night89" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@l8.night89" target="_blank">TikTok</a>
+    <a href="https://m.youtube.com/channel/UCMLWUqN7BfxSN3es3ZmDcbw" target="_blank">YouTube</a>
+  </div>
 
 </body>
 </html>
-
