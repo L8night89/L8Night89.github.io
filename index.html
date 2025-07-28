@@ -13,6 +13,32 @@
       color: white;
     }
 
+    /* Navigation Bar */
+    nav {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 30px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #38B6FF;
+      font-family: 'Orbitron', sans-serif;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
     header {
       display: flex;
       justify-content: center;
@@ -21,6 +47,7 @@
       text-align: center;
       background: url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat, #000;
       flex-direction: column;
+      padding-top: 80px; /* Offset for fixed nav */
     }
 
     header img {
@@ -28,25 +55,6 @@
       width: 400px;
       height: auto;
       filter: drop-shadow(0 0 12px #38B6FF);
-    }
-
-    .cta-button {
-      margin-top: 30px;
-      padding: 15px 30px;
-      font-size: 18px;
-      color: white;
-      background-color: #38B6FF;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-family: 'Orbitron', sans-serif;
-      box-shadow: 0 0 10px #38B6FF;
-      transition: 0.3s;
-    }
-
-    .cta-button:hover {
-      background-color: white;
-      color: black;
     }
 
     section {
@@ -67,55 +75,34 @@
       font-size: 18px;
       line-height: 1.6;
     }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      padding: 40px 0;
-      background-color: #0d0d0d;
-    }
-
-    .social-links a {
-      color: #38B6FF;
-      font-family: 'Orbitron', sans-serif;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .social-links a:hover {
-      color: white;
-    }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="assets/images/Logo.png" alt="L8 Night89 Logo" />
-    <a class="cta-button" href="https://open.spotify.com/artist/5g9AqILC8MJFUWWgwd4KXt?si=2aaCQkLATqiBalvReBNusg" target="_blank">Listen Now</a>
-  </header>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      L8 Night89 is a synthwave project blending nostalgia and neon dreams, born from the love of 80s aesthetics and modern AI music tools.  
-      Based in Singapore, this project explores the fusion of analog emotion and digital precision — music to drive, vibe, and feel to.  
-      Every track is a journey into cinematic soundscapes lit by synths, shadows, and starlight.
-    </p>
-  </section>
-
-  <section id="store">
-    <h2>Store</h2>
-    <p>Merch is coming soon. Stay tuned for exclusive drops that match the sound and style of L8 Night89.</p>
-    <a class="cta-button" href="#" onclick="return false;">Store (Coming Soon)</a>
-  </section>
-
-  <div class="social-links">
-    <a href="https://l8night89.com/#" target="_blank">Website</a>
+  <!-- Navigation -->
+  <nav>
+    <a href="https://open.spotify.com/artist/5g9AqILC8MJFUWWgwd4KXt?si=2aaCQkLATqiBalvReBNusg" target="_blank">Spotify</a>
+    <a href="#" onclick="return false;">Store</a>
     <a href="https://www.instagram.com/l8_night89" target="_blank">Instagram</a>
     <a href="https://www.tiktok.com/@l8.night89" target="_blank">TikTok</a>
     <a href="https://m.youtube.com/channel/UCMLWUqN7BfxSN3es3ZmDcbw" target="_blank">YouTube</a>
-  </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <img src="assets/images/Logo.png" alt="L8 Night89 Logo" />
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      L8 Night89 started off as a passion project that resulted in me having to sell all of my belongings (music equipment included) minus one guitar and move all the way around to the other side of the world in Singapore.  
+      Since Singapore has a thriving AI community I decided to take what I know (very little) about creating music and writing songs and create L8 Night89.  
+      I write songs and create music with the assist of AI creation tools like Suno also while blending various tools and instruments I have lying around to help create and guide the melody in the direction I want it to go.  
+      If you made it this far in my story you are appreciated and thanks for your support.
+    </p>
+  </section>
 
 </body>
 </html>
