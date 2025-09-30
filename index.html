@@ -1,76 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>L8 Night89 Official Site</title>
+  <title>L8 Night89 - Official Site</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; font-family:'Roboto',sans-serif; background:#000; color:#fff; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #000;
+      color: white;
+    }
+
     /* Navigation Bar */
-    nav { width:100%; position:fixed; top:0; left:0; background:rgba(0,0,0,.9);
-          display:flex; justify-content:flex-end; flex-wrap:wrap; padding:20px 30px; z-index:1000; }
-    nav a { color:#38B6FF; font-family:'Orbitron',sans-serif; text-decoration:none;
-            margin-left:20px; font-size:16px; white-space:nowrap; transition:.3s; }
-    nav a:hover { color:#fff; }
-    header { display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center;
-             background:url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat,#000;
-             padding-top:140px; padding-bottom:40px; }
-    header img { max-width:90%; width:520px; height:auto; filter:drop-shadow(0 0 12px #38B6FF); }
-    .cta-button { margin-top:20px; padding:15px 30px; font-size:18px; color:#fff; background:#38B6FF; border:none;
-                  border-radius:6px; text-decoration:none; font-family:'Orbitron',sans-serif;
-                  box-shadow:0 0 10px #38B6FF; transition:.3s; }
-    .cta-button:hover { background:#fff; color:#000; }
-    section { padding:40px 20px 80px; text-align:center; max-width:800px; margin:0 auto; }
-    h2 { font-family:'Orbitron',sans-serif; font-size:32px; margin-bottom:20px; color:#38B6FF; }
-    p { font-size:18px; line-height:1.6; }
-    @media (max-width:768px) {
-      nav { justify-content:center; padding:15px; }
-      nav a { margin:10px; font-size:15px; }
-      header img { width:300px; }
-      .cta-button { padding:12px 24px; font-size:16px; }
-      section { padding-top:30px; }
+    nav {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      padding: 20px 30px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #38B6FF;
+      font-family: 'Orbitron', sans-serif;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      white-space: nowrap;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat, #000;
+      padding-top: 140px; /* Space under nav */
+      padding-bottom: 40px;
+    }
+
+    header img {
+      max-width: 90%;
+      width: 520px;
+      height: auto;
+      filter: drop-shadow(0 0 12px #38B6FF);
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #38B6FF;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: 'Orbitron', sans-serif;
+      box-shadow: 0 0 10px #38B6FF;
+      transition: 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    section {
+      padding: 40px 20px 80px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #38B6FF;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(0,0,0,0.9);
+      color: #aaa;
+    }
+
+    footer a {
+      margin: 0 12px;
+      color: #38B6FF;
+      text-decoration: none;
+      font-family: 'Orbitron', sans-serif;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav {
+        justify-content: center;
+        padding: 15px;
+      }
+
+      nav a {
+        margin: 10px;
+        font-size: 15px;
+      }
+
+      header img {
+        width: 300px;
+      }
+
+      .cta-button {
+        padding: 12px 24px;
+        font-size: 16px;
+      }
+
+      section {
+        padding-top: 30px;
+      }
     }
   </style>
-
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s){
-    if(f.fbq)return;
-    n=f.fbq=function(){ n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments) };
-    if(!f._fbq)f._fbq=n;
-    n.push=n; n.loaded=!0; n.version='2.0';
-    n.queue=[];
-    t=b.createElement(e); t.async=!0;
-    t.src=v;
-    s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s);
-  }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2014840095984333');
-  fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=2014840095984333&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Meta Pixel Code -->
 </head>
 <body>
-
   <nav>
     <a href="#listen">Listen</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
+    <a href="https://open.spotify.com/artist/your-artist-id" target="_blank">Spotify</a>
+    <a href="https://music.apple.com/artist/your-artist-id" target="_blank">Apple Music</a>
+    <a href="https://instagram.com/l8night89" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/L8Night89" target="_blank">Facebook</a>
+    <a href="https://www.youtube.com/@L8Night89" target="_blank">YouTube</a>
   </nav>
 
   <header>
     <img src="https://placehold.co/1040x300/000000/38B6FF?text=L8+Night89" alt="L8 Night89 logo"/>
-    <a class="cta-button" href="https://open.spotify.com/artist/your-artist-id" target="_blank" rel="noopener">Stream Now</a>
+    <a class="cta-button" href="https://open.spotify.com/artist/your-artist-id" target="_blank">Stream Now</a>
   </header>
 
   <section id="listen">
     <h2>Latest Release</h2>
-    <p>Spin Let’s Stay and add it to your playlists. Music links are in bio.</p>
+    <p>Spin <em>Let’s Stay</em> and add it to your playlists. Music links are in bio.</p>
   </section>
 
   <section id="about">
@@ -83,5 +174,13 @@
     <p>DM on Instagram or reach out via the links in bio.</p>
   </section>
 
+  <footer>
+    <p>Connect with L8 Night89</p>
+    <a href="https://open.spotify.com/artist/your-artist-id" target="_blank">Spotify</a>
+    <a href="https://music.apple.com/artist/your-artist-id" target="_blank">Apple Music</a>
+    <a href="https://instagram.com/l8night89" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/L8Night89" target="_blank">Facebook</a>
+    <a href="https://www.youtube.com/@L8Night89" target="_blank">YouTube</a>
+  </footer>
 </body>
 </html>
